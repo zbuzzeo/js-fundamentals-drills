@@ -41,10 +41,10 @@ describe("JS fundamental Drills", function() {
   it("#splitString is a function that takes in a string and returns an array with each characater as a value of the array.", function() {
     expect(func.splitString('abc')).to.deep.equal(['a','b','c']);
   });
-  it("#lengthOfLast is a function that takes in an array of strings and returns thelength of the last string in the array.", function() {
+  it("#lengthOfLast is a function that takes in an array of strings and returns the length of the last string in the array.", function() {
     expect(func.lengthOfLast(['a','ab','abc'])).to.deep.equal(3);
   });
-  it("#sumBelowTen a function that takes in an array of numbers and returns the sum of all numbers below 10.", function() {
+  it("#sumBelowTen is a function that takes in an array of numbers and returns the sum of all numbers below 10.", function() {
     expect(func.sumBelowTen([1,2,11])).to.deep.equal(3);
   });
   it("#moreThanTenLetters is a function that takes in an array of strings and returns the amount of elements that have greater than 10 letters. ", function() {
@@ -124,7 +124,7 @@ describe("JS fundamental Drills", function() {
   it("#frequencyMap is a function that takes in an array of strings and returns an object with the string as the key and the number of occurences as the value.", function() {
     expect(func.frequencyMap(['a','a','a','b','c'])).to.deep.equal({'a':3,'b':1,'c':1});
   });
-  it("#tupleToObject is Create a function that takes in an array of tuples and and returns an object whos keys are the first element of the tuples and values are second element of the tuples. ", function() {
+  it("#tupleToObject is a function that takes in an array of tuples and and returns an object whos keys are the first element of the tuples and values are second element of the tuples. ", function() {
     expect(func.tupleToObject([['a',1],['b',2],['c',3])).to.deep.equal({'a':1, 'b':2, 'c':3});
   });
 });
