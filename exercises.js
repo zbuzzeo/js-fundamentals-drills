@@ -241,14 +241,14 @@ var tupleToObject;
  */
 var tupleToObjectReverse;
 
-/* #stringToKeys
+/* #strToKeys
  *
  * Takes in an array of strings and returns an object with all string elements as the object's keys and all values set to 0.
  *
  * @param {Array}
  * @return {Object}
  */
-var stringToKeys;
+var strToKeys;
 
 /* #getValues
  *
@@ -280,8 +280,8 @@ var objectToArray;
 
 /* #arrayToObject
  *
- * takes in an array and return an object of key value pairs in sequence of the array.  
- * If there is an odd amount in the array, set the last element value to null.
+ * takes in an array and returns an object with keys set to the elements in the array and
+ * all values set to false.
  *
  * @param {Array}
  * @return {Object}
@@ -367,7 +367,7 @@ var charCountMap;
  */
 var frequencyMap;
 
-/* #tupleToObject
+/* #tupleConvertToObject
  *
  * takes in an array of tuples and and returns an object whos keys are 
  * the first element of the tuples and values are second element of the tuples.
@@ -375,7 +375,7 @@ var frequencyMap;
  * @param {String}
  * @return {Bool}
  */
-var tupleToObject;
+var tupleConvertToObject;
 
 
 module.exports = {
@@ -405,7 +405,7 @@ module.exports = {
   makeObjectReverse: null,
   tupleToObject: null,
   tupleToObjectReverse: null,
-  stringToKeys: null,
+  strToKeys: null,
   getValues: null,
   getKeys: null,
   objectToArray: null,
@@ -418,5 +418,5 @@ module.exports = {
   stringToKeys: null,
   charCountMap: null,
   frequencyMap: null,
-  tupleToObject: null
+  tupleConvertToObject: null
 }
