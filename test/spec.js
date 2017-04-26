@@ -48,7 +48,7 @@ describe("JS fundamental Drills", function() {
     expect(func.sumBelowTen([1,2,11])).to.deep.equal(3);
   });
   it("#moreThanTenLetters is a function that takes in an array of strings and returns the amount of elements that have greater than 10 letters. ", function() {
-    expect(func.moreThanTenLetters(['abc','ab','lollerskatesrofl'])).to.deep.equal(2);
+    expect(func.moreThanTenLetters(['abc','ab','lollerskatesrofl'])).to.deep.equal(1);
   });
   it("#multiplyAll is a function that takes in an array of numbers and returns the product of all elements.", function() {
     expect(func.multiplyAll([1,2,3])).to.deep.equal(6);
@@ -82,10 +82,10 @@ describe("JS fundamental Drills", function() {
     expect(func.tupleToObject(['a',1])).to.deep.equal({'a':1});
   });
   it("#tupleToObjectReverse is a function that takes in a tuple and returns an object second array element as key and first array element as the value. ", function() {
-    expect(func.TupleToObjectReverse([1,'a'])).to.deep.equal({'a':1});
+    expect(func.tupleToObjectReverse([1,'a'])).to.deep.equal({'a':1});
   });
-  it("#stringToKeys is a function that takes in an array of strings and returns an object with all the strings as keys and values set to 0.", function() {
-    expect(func.StringToKeys(['a','ab','abc'])).to.deep.equal({'a':1,'ab':2,'abc':3});
+  it("#strToKeys is a function that takes in an array of strings and returns an object with all the strings as keys and values set to 0.", function() {
+    expect(func.strToKeys(['a','ab','abc'])).to.deep.equal({'a':0,'ab':0,'abc':0});
   });
   it("#getValues is a function that takes in an object and returns an array of all the objects values. ", function() {
     expect(func.getValues({'a':1,'b':2})).to.deep.equal([1,2]);
@@ -96,8 +96,8 @@ describe("JS fundamental Drills", function() {
   it("#objectToArray is a function that takes in an object and returns an array of tuples of the objects key value pairs. ", function() {
     expect(func.objectToArray({'a':1,'b':2})).to.deep.equal([['a',1],['b',2]]);
   });
-  it("#arrayToObject is a function that takes in an array and return an object of key value pairs in sequence of the array.  If there is an odd amount in the array, set the last element value to null. ", function() {
-    expect(func.arrayToObject(['a',1,'b',2])).to.deep.equal({'a':1,'b':2});
+  it("#arrayToObject is a function that takes in an array and returns an object of keys set to the elements in the array with all values set to false. ", function() {
+    expect(func.arrayToObject(['a','b'])).to.deep.equal({'a':false,'b':false});
   });
   it("#arraysToObject is a function that takes in two arrays, the first array elements will be keys of an object and second array elements will be values of an object ", function() {
     expect(func.arraysToObject(['a','b'],[1,2])).to.deep.equal({'a':1,'b':2});
@@ -106,10 +106,10 @@ describe("JS fundamental Drills", function() {
     expect(func.objectsToTuples({'a':1,'b':2},{'c':3,'d':4})).to.deep.equal([['a',1],['b',2],['c',3],['d',4]]);
   });
   it("#mapArrayValues is a function that takes in an array and returns an object with keys of all values in the array and the values for the keys will be all set to true.", function() {
-    expect(func.mapArrayVlues(['a','b','c'])).to.deep.equal({'a':true,'b':true,'c':true});
+    expect(func.mapArrayValues(['a','b','c'])).to.deep.equal({'a':true,'b':true,'c':true});
   });
   it("#mapStringCounts is a function that takes in an array of strings and returns an object with the keys of all strings in the array and value if the character count of the key is greater than or equal to 5 to true, and less than five to false. ", function() {
-    expect(func.mapStringCounts(['a','a','b','c'])).to.deep.equal({'a':2,'b':1,'c':1});
+    expect(func.mapStringCounts(['a','abcdfe'])).to.deep.equal({'a':false,'abcdfe':true});
   });
   it("#arrayToObjectNums is a function that takes in an array of numbers and returns an object with keys of the numbers of the array and set each value in the object to true. ", function() {
     expect(func.arrayToObjectNums([1,2,3])).to.deep.equal({1:true,2:true,3:true});
@@ -124,7 +124,7 @@ describe("JS fundamental Drills", function() {
   it("#frequencyMap is a function that takes in an array of strings and returns an object with the string as the key and the number of occurences as the value.", function() {
     expect(func.frequencyMap(['a','a','a','b','c'])).to.deep.equal({'a':3,'b':1,'c':1});
   });
-  it("#tupleToObject is a function that takes in an array of tuples and and returns an object whos keys are the first element of the tuples and values are second element of the tuples. ", function() {
-    expect(func.tupleToObject([['a',1],['b',2],['c',3]])).to.deep.equal({'a':1, 'b':2, 'c':3});
+  it("#tupleConvertToObject is a function that takes in an array of tuples and and returns an object whos keys are the first element of the tuples and values are second element of the tuples. ", function() {
+    expect(func.tupleConvertToObject([['a',1],['b',2],['c',3]])).to.deep.equal({'a':1, 'b':2, 'c':3});
   });
 });
