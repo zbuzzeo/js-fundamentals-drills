@@ -149,15 +149,6 @@ var moreThanTenLetters;
  */
 var multiplyAll;
 
-/* #getKeys
- *
- * Takes in an object and returns an array of the object's keys.
- *
- * @param {Object}
- * @return {Array}
- */
-var getKeys;
-
 /* #sumAllPositive
  *
  * Takes in an array of numbers and returns the sum of all non-negative numbers.
@@ -395,7 +386,6 @@ module.exports = {
   sumBelowTen: null,
   moreThanTenLetters: null,
   multiplyAll: null,
-  getKeys: null,
   sumAllPositive: null,
   stringCountBelowThree: null,
   countObjects: null,
