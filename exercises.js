@@ -36,7 +36,7 @@ var stringCount;
  *
  * Takes in an array and returns the length of the array.
  *
- * @param {String}
+ * @param {Array}
  * @return {Number}
  */
 var arrayLength;
