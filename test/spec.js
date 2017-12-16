@@ -53,9 +53,6 @@ describe("JS fundamental Drills", function() {
   it("#multiplyAll is a function that takes in an array of numbers and returns the product of all elements.", function() {
     expect(func.multiplyAll([1,2,3])).to.deep.equal(6);
   });
-  it("#getKeys is a function that takes in an object and returns an array of key names in the object.", function() {
-    expect(func.getKeys({'cats':2, 'dogs':3})).to.deep.equal(['cats','dogs']);
-  });
   it("#sumAllPositive is a function that takes in an array of numbers and returns the sum of all non-negative numbers. ", function() {
     expect(func.sumAllPositive([-1,2,3])).to.deep.equal(5);
   });

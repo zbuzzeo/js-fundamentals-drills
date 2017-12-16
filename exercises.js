@@ -36,7 +36,7 @@ var stringCount;
  *
  * Takes in an array and returns the length of the array.
  *
- * @param {String}
+ * @param {Array}
  * @return {Number}
  */
 var arrayLength;
@@ -148,15 +148,6 @@ var moreThanTenLetters;
  * @return {Number}
  */
 var multiplyAll;
-
-/* #getKeys
- *
- * Takes in an object and returns an array of the object's keys.
- *
- * @param {Object}
- * @return {Array}
- */
-var getKeys;
 
 /* #sumAllPositive
  *
@@ -395,7 +386,6 @@ module.exports = {
   sumBelowTen: null,
   moreThanTenLetters: null,
   multiplyAll: null,
-  getKeys: null,
   sumAllPositive: null,
   stringCountBelowThree: null,
   countObjects: null,
