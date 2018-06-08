@@ -5,7 +5,7 @@ This is an exercise repo with 40 different drills to practice writing functions,
 ## Pre-Requisites
 
 * A personal GitHub account
-* [Sublime Text 3 ](http://www.sublimetext.com/3)
+* [Visual Studio Code ](https://code.visualstudio.com/)
 * [Git](https://help.github.com/articles/set-up-git#platform-all)
 
 ## Instructions
