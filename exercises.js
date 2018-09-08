@@ -5,13 +5,7 @@
  * @param {Array} // [1,2,3]
  * @return {Array} // [2,4,6]
  */
-var doubleArray = function(arr) {
-  var result = [];
-  for (var i = 0; i < arr.length; i++) {
-    result.push(arr[i] * 2) 
-  }
-  return result
-}
+var doubleArray;
 
 /* #sumArrays
  *
