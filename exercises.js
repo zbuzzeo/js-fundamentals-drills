@@ -674,6 +674,7 @@ var frequencyMap = function( array ){
  */
 var tupleConvertToObject = function ( array ) {
         var newObject = {  };
+        // we have to access arrays within an array.
         for ( var i = 0; i < array.length; i++ ) {
                 // array[i] is grabbing one of the tuple sets in the array
                 var currentTuple = array[i];
